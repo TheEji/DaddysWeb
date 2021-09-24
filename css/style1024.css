@@ -28,30 +28,30 @@
 
 body{
     position: relative;
-    width: 1920px;
-    min-height: 800px;
+    width: 1024px;
+    
     padding-top:31px;    
     padding-bottom: 139px;
     overflow-x: hidden;
-    background: linear-gradient(113.73deg, rgba(30, 71, 118, 0.74) 10.31%, #102C4E 81.19%) no-repeat;
-    /*background-color: cornflowerblue;*/
+   /* background: linear-gradient(113.73deg, rgba(30, 71, 118, 0.74) 10.31%, #102C4E 81.19%) no-repeat;*/
+    background-color: cornflowerblue;
 }
 
 /*********************************Header*********************************/
 .header{
-    min-height: 72px;
-    padding-left:126px;
+    min-height: 72px;    
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 /*******Logo*******/
 .logo{
-    width: 310px;
+    width: 350px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
-    font-family: BebasNeue-Regular;
-    margin-right: 273px;
+    font-family: BebasNeue-Regular;    
 }
 
 .logo_rectangle{    
@@ -71,7 +71,8 @@ body{
     color: #315072;
     transform: rotate(10deg);
 }
-.logo_text{    
+.logo_text{
+    width: 210px; 
     font-size: 48px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -80,7 +81,7 @@ body{
 /*******Menu*******/
 .menu{
     width: 690px;
-    margin-right: 250px;
+    margin-bottom: 50px;    
     display: flex;
     justify-content: space-between;
     list-style-type: none;
@@ -114,11 +115,12 @@ body{
 
 /*******************************************Promo*****************************************/
 .promo{
-    width: 915px;
-    margin-top: 133px;
-    padding-left:120px;
+    width: 915px;    
+    margin:50px auto 0px auto;
+    
     font-family: Nunito-Regular;
     color: #FFFFFF;
+    text-align: center;
     
 }
 
@@ -136,6 +138,7 @@ body{
 }
 /***********Button****************/
 .promo_btn{
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,9 +162,8 @@ body{
 
 /************************************About********************************************/
 .about{
-    width: 915px;
-    margin-top: 110px;
-    padding-left:120px;
+    width: 915px;    
+    margin: 100px auto 0 auto;
     display: flex;
     justify-content:space-between;
 }
@@ -186,46 +188,52 @@ body{
 }
 /*************************************Social*************************************************/
 .social{
-    width: 20px;
-    height: 119px;
+    width: 119px;
+    height: 20px;
     position: absolute;
-    top: 572px;
-    left: 1777px;
+    top: 1000px;
+    left: 100px;
     display: flex;
-    flex-direction: column;
+    z-index: -1;
     justify-content: space-between;
     align-items: center;
+    
+}
+.social_item{
+    display: block;
+    width: 20px;
+    height: 20px;
 }
 
 /*****************************************Hero********************************************/
 .hero_wrap{
     position: absolute;
-    top: 217px;
-    left:880px;
-    z-index: -1;
+    top: 750px;
+    left:-60px;
+    z-index: -2;
 }
 .hero_bubble_1{
     position: absolute;
-    top: -50px;
-    right: 60px;
+    top: 150px;
+    right: 30px;
 }
 .hero_bubble_2{
     position: absolute;
-    top: 160px;
+    top: 350px;
     right: 230px;
 }
 
 .hero_bubble_3{
     position: absolute;
-    top: 220px;
-    right: 300px;
+    top: 340px;
+    right: 340px;
 }
 .bubble_text{
     position: absolute;
     width: 188px;
     height: 88px;
-    top: 0px;
-    right: 105px;   
+    top: 200px;
+    right: 85px;   
     font-family: Nunito-Regular;
     font-size: 34px;
     line-height: 44px;
